@@ -142,8 +142,8 @@
           <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <form
-                      method="post"
+                    <form id="form"
+                        method="post"
                       enctype="multipart/form-data"
                       class="tm-form tm-register-form tm-form-bordered"
                     >
@@ -156,7 +156,7 @@
                               <select
                                 id="register-option"
                                 class="mt-10"
-                                name="drop"
+                                name="Journey Type"
                               >
                                 <option value="One-Way drop">One-Way drop</option>
                                 <option value="Round trip">Round trip</option>
@@ -175,7 +175,7 @@
                               <label for="register-car">Select Vehicle Type</label>
                               <select
                                 id="register-option"
-                                name="vehicle"
+                                name="Vehicle Type"
                                 class="mt-10"
                               >
                                 <option value="Hatch back">Hatch back</option>
@@ -201,7 +201,7 @@
                               <input
                                 type="text"
                                 id="register-username"
-                                name="plocation"
+                                name="Pick Up"
                                 required="required"
                               />
                             </div>
@@ -212,7 +212,7 @@
                               <input
                                 type="text"
                                 id="register-email"
-                                name="dlocation"
+                                name="Drop"
                                 required="required"
                               />
                             </div>
@@ -223,7 +223,7 @@
                               <input
                                 type="text"
                                 id="register-username"
-                                name="name"
+                                name="Name"
                                 required="required"
                               />
                             </div>
@@ -234,7 +234,7 @@
                               <input
                                 type="text"
                                 id="register-email"
-                                name="number"
+                                name="Phone Number"
                                 onkeypress="return isNumberKey(event)"
                                 maxlength="10"
                                 required="required"
@@ -519,7 +519,7 @@
                     <div class="col-sm-6 journysec">
                       <div class="form-group mb-10">
                         <select
-                          name="services"
+                          name="Journey Type"
                           class="form-control"
                           aria-required="true"
                           aria-invalid="false"
@@ -539,7 +539,7 @@
                     <div class="col-sm-6">
                       <div class="form-group mb-10">
                         <select
-                          name="vehicle"
+                          name="Vehicle Type"
                           class="form-control"
                           aria-required="true"
                           aria-invalid="false"
@@ -563,7 +563,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <input
-                          name="plocation"
+                          name="Pick Up"
                           class="form-control"
                           type="text"
                           required
@@ -575,7 +575,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <input
-                          name="dlocation"
+                          name="Drop"
                           class="form-control required"
                           type="text"
                           placeholder="Drop off location"
@@ -589,7 +589,7 @@
                     <div class="col-sm-6">
                       <div class="form-group mb-10">
                         <input
-                          name="name"
+                          name="Name"
                           class="form-control"
                           type="text"
                           required
@@ -601,7 +601,7 @@
                     <div class="col-sm-6">
                       <div class="form-group mb-10">
                         <input
-                          name="number"
+                          name="Phone Number"
                           class="form-control"
                           type="text"
                           required
@@ -666,6 +666,7 @@
     </div>
 
     <!-- Js Files -->
+     <script src="js/googlesheet.js"></script>
     <script src="js/modernizr-3.6.0.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
